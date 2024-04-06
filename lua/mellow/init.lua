@@ -76,8 +76,8 @@ local set_groups = function()
     ["VertSplit"] = { fg = c.gray02 }, -- the column separating vertically split windows
     ["WinSeparator"] = { fg = c.gray02 }, -- the column separating vertically split windows
     ["Folded"] = { fg = c.gray04 }, -- line used for closed folds
-    ["FoldColumn"] = { bg = cfg.transparent and c.none, fg = c.gray05 }, -- column where folds are displayed
-    ["SignColumn"] = { bg = cfg.transparent and c.none, fg = c.gray05 }, -- column where signs are displayed
+    ["FoldColumn"] = { bg = cfg.transparent and c.none or c.bg, fg = c.gray05 }, -- column where folds are displayed
+    ["SignColumn"] = { bg = cfg.transparent and c.none or c.bg, fg = c.gray05 }, -- column where signs are displayed
     ["IncSearch"] = { fg = c.black, bg = c.yellow }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
     ["CurSearch"] = { fg = c.black, bg = c.yellow }, -- 'cursearch' highlighting; also used for the text replaced with ":s///c"
     ["LineNr"] = { fg = c.gray04 }, -- Line number for " =number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
@@ -86,8 +86,8 @@ local set_groups = function()
     ["ModeMsg"] = { fg = c.gray03, bold = true }, --' showmode' message (e.g., "-- INSERT --")
     ["MoreMsg"] = { fg = c.bright_magenta }, -- more-prompt
     ["NonText"] = { fg = c.gray02 }, --'~' and '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line).
-    ["Normal"] = { fg = c.fg, bg = cfg.transparent and c.none }, -- normal text
-    ["NormalNC"] = { fg = c.fg, bg = cfg.transparent and c.none }, -- normal text
+    ["Normal"] = { fg = c.fg, bg = cfg.transparent and c.none or c.bg }, -- normal text
+    ["NormalNC"] = { fg = c.fg, bg = cfg.transparent and c.none or c.bg_dark }, -- normal text
     ["NormalFloat"] = { fg = c.white, bg = c.gray00 }, -- Normal text in floating windows.
     ["FloatBorder"] = { fg = c.gray03, bg = c.bg }, -- Border of floating windows.
     ["Pmenu"] = { fg = c.white, bg = c.black }, -- Popup menu: normal item.
