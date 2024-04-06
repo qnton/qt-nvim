@@ -2,9 +2,9 @@ local M = {}
 
 M.dark = {
   -- Basic
-  bg = "#161617",
+  bg = "#101010",
   fg = "#c9c7cd",
-  bg_dark = "#131314",
+  bg_dark = "#101010",
   -- Normal
   black = "#27272a",
   red = "#f5a191",
@@ -19,7 +19,7 @@ M.dark = {
   bright_red = "#ffae9f",
   bright_green = "#9dc6ac",
   bright_yellow = "#f0c5a9",
-  bright_blue = "#b9aeda",
+  bright_blue = "#bfbeee",
   bright_magenta = "#ecaad6",
   bright_cyan = "#f591b2",
   bright_white = "#cac9dd",
